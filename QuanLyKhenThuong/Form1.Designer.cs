@@ -32,15 +32,26 @@ namespace QuanLyKhenThuong
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraEditors.FormatConditionRuleTopBottom formatConditionRuleTopBottom1 = new DevExpress.XtraEditors.FormatConditionRuleTopBottom();
+            DevExpress.XtraEditors.FormatConditionRuleIconSet formatConditionRuleIconSet1 = new DevExpress.XtraEditors.FormatConditionRuleIconSet();
+            DevExpress.XtraEditors.FormatConditionIconSet formatConditionIconSet1 = new DevExpress.XtraEditors.FormatConditionIconSet();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon1 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon2 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon3 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
+            DevExpress.XtraEditors.FormatConditionIconSetIcon formatConditionIconSetIcon4 = new DevExpress.XtraEditors.FormatConditionIconSetIcon();
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.barSubItemNavigation = new DevExpress.XtraBars.BarSubItem();
             this.cadetsBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
             this.canBoBarButtonItem = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroupNavigation = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -61,6 +72,8 @@ namespace QuanLyKhenThuong
             this.labelControlNgaySinh = new DevExpress.XtraEditors.LabelControl();
             this.labelControlName = new DevExpress.XtraEditors.LabelControl();
             this.pictureEditCadet = new DevExpress.XtraEditors.PictureEdit();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officeNavigationBar)).BeginInit();
@@ -88,10 +101,16 @@ namespace QuanLyKhenThuong
             this.skinRibbonGalleryBarItem,
             this.barSubItemNavigation,
             this.cadetsBarButtonItem,
-            this.canBoBarButtonItem});
+            this.canBoBarButtonItem,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbonControl.MaxItemId = 44;
+            this.ribbonControl.MaxItemId = 50;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -134,10 +153,44 @@ namespace QuanLyKhenThuong
             this.canBoBarButtonItem.Name = "canBoBarButtonItem";
             this.canBoBarButtonItem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonNavigation_ItemClick);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Quản Lý Vi Phạm";
+            this.barButtonItem1.Id = 44;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Quản Lý Hoạt Động Tích Cực";
+            this.barButtonItem2.Id = 45;
+            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Phân Tích Danh Sách Khen Thưởng";
+            this.barButtonItem3.Id = 46;
+            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Nhập Điểm";
+            this.barButtonItem4.Id = 47;
+            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
+            // 
             // ribbonPage
             // 
             this.ribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroupNavigation});
+            this.ribbonPageGroupNavigation,
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup3});
             this.ribbonPage.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage.ImageOptions.Image")));
             this.ribbonPage.Name = "ribbonPage";
             this.ribbonPage.Text = "Quản Lý Nghiệp Vụ";
@@ -145,7 +198,23 @@ namespace QuanLyKhenThuong
             // ribbonPageGroupNavigation
             // 
             this.ribbonPageGroupNavigation.ItemLinks.Add(this.barSubItemNavigation);
+            this.ribbonPageGroupNavigation.ItemLinks.Add(this.barButtonItem4);
             this.ribbonPageGroupNavigation.Name = "ribbonPageGroupNavigation";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.ShowCaptionButton = false;
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            this.ribbonPageGroup3.ShowCaptionButton = false;
             // 
             // ribbonPage1
             // 
@@ -252,18 +321,47 @@ namespace QuanLyKhenThuong
             // 
             // gridViewCadet
             // 
-            gridFormatRule1.ApplyToRow = true;
             gridFormatRule1.Name = "Format0";
-            formatConditionRuleTopBottom1.Rank = new decimal(new int[] {
-            5,
+            formatConditionRuleIconSet1.AllowAnimation = DevExpress.Utils.DefaultBoolean.True;
+            formatConditionIconSet1.CategoryName = "Ratings";
+            formatConditionIconSetIcon1.PredefinedName = "Rating4_1.png";
+            formatConditionIconSetIcon1.Value = new decimal(new int[] {
+            75,
             0,
             0,
             0});
-            gridFormatRule1.Rule = formatConditionRuleTopBottom1;
+            formatConditionIconSetIcon1.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSetIcon2.PredefinedName = "Rating4_2.png";
+            formatConditionIconSetIcon2.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            formatConditionIconSetIcon2.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSetIcon3.PredefinedName = "Rating4_3.png";
+            formatConditionIconSetIcon3.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            formatConditionIconSetIcon3.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSetIcon4.PredefinedName = "Rating4_4.png";
+            formatConditionIconSetIcon4.ValueComparison = DevExpress.XtraEditors.FormatConditionComparisonType.GreaterOrEqual;
+            formatConditionIconSet1.Icons.Add(formatConditionIconSetIcon1);
+            formatConditionIconSet1.Icons.Add(formatConditionIconSetIcon2);
+            formatConditionIconSet1.Icons.Add(formatConditionIconSetIcon3);
+            formatConditionIconSet1.Icons.Add(formatConditionIconSetIcon4);
+            formatConditionIconSet1.Name = "Ratings4";
+            formatConditionIconSet1.ValueType = DevExpress.XtraEditors.FormatConditionValueType.Percent;
+            formatConditionRuleIconSet1.IconSet = formatConditionIconSet1;
+            gridFormatRule1.Rule = formatConditionRuleIconSet1;
             this.gridViewCadet.FormatRules.Add(gridFormatRule1);
             this.gridViewCadet.GridControl = this.gridControlCadet;
             this.gridViewCadet.Name = "gridViewCadet";
+            this.gridViewCadet.OptionsBehavior.Editable = false;
+            this.gridViewCadet.OptionsBehavior.ReadOnly = true;
             this.gridViewCadet.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridViewCadet_RowClick);
+            this.gridViewCadet.DoubleClick += new System.EventHandler(this.gridViewCadet_DoubleClick);
             // 
             // managersNavigationPage
             // 
@@ -336,6 +434,22 @@ namespace QuanLyKhenThuong
             this.pictureEditCadet.Size = new System.Drawing.Size(147, 160);
             this.pictureEditCadet.TabIndex = 0;
             // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Quản Lý Kỷ Luật";
+            this.barButtonItem5.Id = 48;
+            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Caption = "Quản Lý Khen Thưởng";
+            this.barButtonItem6.Id = 49;
+            this.barButtonItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -402,5 +516,13 @@ namespace QuanLyKhenThuong
         private DevExpress.XtraEditors.LabelControl labelControlNgaySinh;
         private DevExpress.XtraEditors.LabelControl labelControlName;
         private DevExpress.XtraEditors.PictureEdit pictureEditCadet;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
     }
 }
