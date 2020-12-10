@@ -58,6 +58,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailCadet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailCadet.Designer.cs">
+      <DependentUpon>DetailCadet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLyKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLyKhenThuong.Designer.cs">
+      <DependentUpon>FormQuanLyKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhanTich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhanTich.Designer.cs">
+      <DependentUpon>PhanTich.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +95,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLKTDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyHoatDongTichCuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyHoatDongTichCuc.Designer.cs">
+      <DependentUpon>QuanLyHoatDongTichCuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKiLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKiLuat.Designer.cs">
+      <DependentUpon>QuanLyKiLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyViPham.Designer.cs">
+      <DependentUpon>QuanLyViPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DetailCadet.resx">
+      <DependentUpon>DetailCadet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhanTich.resx">
+      <DependentUpon>PhanTich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -115,6 +157,7 @@
       <DependentUpon>QLKTDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

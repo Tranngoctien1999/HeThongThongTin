@@ -19,7 +19,7 @@ namespace QuanLyKhenThuong
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new FormLogin());
+            Application.Run(new Form1());
         }
     }
 }
